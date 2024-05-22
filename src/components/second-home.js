@@ -12,8 +12,8 @@ const Home = () => {
     return () => clearTimeout(timer); // Clean up the timer on component unmount
   }, []);
   return (
-    <div className='h-screen w-screen bg-gray-100 flex flex-col lg:items-center'>
-        <header className='relative w-full flex items-center p-4 lg:justify-center pr-6'>
+    <div className='h-screen w-screen max-h-screen bg-gray-100 flex flex-col justify-center lg:items-center'>
+        <header className='absolute top-0 w-full flex items-center p-4 lg:justify-center pr-6'>
             <div className='rounded-full bg-violet-950 h-20 w-20 flex items-center justify-center'>
             <span className='text-white text-xl font-bold'>BA</span>
             </div>
@@ -23,9 +23,9 @@ const Home = () => {
                 <img src="/instagram-icon.svg" className='h-14'/>
             </div>  
         </header>
-        <div className='flex flex-col w-full items-center md:flex-col md:gap-6 md:justify-center lg:flex-row lg:w-5/6 pb-10'>
+        <div className='flex flex-col w-full items-center pb-10 md:pb-0 md:flex-col md:gap-6 md:justify-center lg:flex-row lg:w-5/6'>
             <div className="h-full flex flex-col pb-6 w-11/12 lg:w-3/5 lg:pb-32 lg:justify-end">
-            <div className='flex flex-col items-start pt-36 relative'>
+            <div className='flex flex-col items-start relative'>
                 <span className='text-3xl text-gray-300 mb-4 font-reddit'>Bruno Afonso</span>
                 <div className='flex items-center'>{
                 Array.from("Frontend").map((item, index) => (
@@ -117,7 +117,7 @@ const Home = () => {
             className='w-[400px] rounded-full hidden lg:flex' src="/photo-1.png"/>
         </div>
         <motion.div
-         className='h-8 bg-violet-950 w-full border-t-4 border-green-800'
+         className='h-8 bg-violet-950 w-full border-t-4 border-green-800 shrink-0 md:mt-7'
          initial={{ width: 0 }}
          animate={{ width: "100%" }}
          transition={{
