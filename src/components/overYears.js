@@ -13,7 +13,7 @@ function OverYears() {
         {icon}
         <span className='text-violet-950 font-bold text-lg'>{firstLine}</span>
         <span className='text-base text-violet-950'>{secondLine}</span>
-        <span className='text-base text-violet-950'>{thirthLine}</span>
+        <span className='text-base text-violet-950 text-center'>{thirthLine}</span>
       </div>
     )
   }

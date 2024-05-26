@@ -93,7 +93,7 @@ const Home = () => {
                     restDelta: 0.001
                 }
                 }} className='flex mt-6 lg:mt-6 relative'>
-                <h4 className='pr-2 mt-auto text-violet-950 leading-5 line-height md:text-lg font-reddit'>"We have two ears and one mouth so that we can listen twice as much as we speak." - Epictetus</h4>
+                <h4 className='pr-2 text-violet-950 leading-5 line-height md:text-lg font-reddit'>"We have two ears and one mouth so that we can listen twice as much as we speak." - Epictetus</h4>
                 <h4 className='text-violet-950 pl-2 text-base leading-5 md:text-lg font-reddit'>“My motto is to be stronger than yesterday, if I have to I’ll be stronger than half a day ago, even a minute ago!” - Rock Lee</h4>
                 </motion.div>
                 <div className='flex items-end mt-4 gap-4'>
