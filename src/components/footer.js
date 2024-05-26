@@ -9,9 +9,15 @@ const Footer = () => {
     <div className='w-full px-4 py-4 lg:flex lg:px-10 bg-gray-100'>
       <div className='w-full'>
           <div className='flex items-center space-x-4 mb-3'>
-            <FaLinkedin className='text-4xl text-violet-950'/>
-            <FaGithub className='text-4xl text-violet-950'/>
-            <FaInstagram className='text-4xl text-violet-950'/>
+              <a href="https://www.linkedin.com/in/brunoafonso94/">
+                <FaLinkedin className='text-4xl text-violet-950'/>
+              </a>
+              <a href="https://github.com/Brunoa94">
+                <FaGithub className='text-4xl text-violet-950'/>
+              </a>
+              <a href="https://www.instagram.com/brunoa94/">
+                <FaInstagram className='text-4xl text-violet-950'/>
+              </a>
           </div>
           <div className='flex items-center mb-3 lg:mb-0'>
             <IoIosMail className='text-4xl text-violet-950'/>

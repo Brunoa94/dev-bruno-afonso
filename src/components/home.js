@@ -13,10 +13,6 @@ const Home = () => {
       setStartAnimation(true);
     }, 2000);
     
-    const changeColor = setInterval(() => {
-
-    })
-
     return () => clearTimeout(timer); // Clean up the timer on component unmount
   }, []);
 

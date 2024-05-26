@@ -19,7 +19,7 @@ const SkillsLoader = () => {
 
         return(
             <div ref={ref} className='flex flex-col w-full'>
-                <span className='text-xl font-bold font-reddit'>{title}</span>
+                <span className='text-xl font-reddit'>{title}</span>
                 <motion.div initial={{ width: 0, height: 16 }}
                 animate={{ width: `${isInView ? `${level}%` : 0}`, height: `${isInView ? "16px" : "32px"}` }}
                 transition={{
@@ -31,7 +31,7 @@ const SkillsLoader = () => {
     }
 
   return (
-    <div className='flex flex-col items-center w-full px-4 bg-gray-100'>
+    <div className='md:hidden flex flex-col items-center w-full px-4 py-8 bg-gray-100'>
         <span className='mb-4 text-3xl text-violet-950 font-bold font-reddit'>Skills</span>
         <div className='flex w-full flex-col gap-4'>
             {Skill("CSS / Tailwind CSS", 80)}

@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import {motion, transform, useInView} from 'framer-motion';
 import { FaGithub } from "react-icons/fa";
+import { BiWorld } from "react-icons/bi";
 
 const ProjectCard = (title, img, description, technologies, githublink, webLink, big, position) => {
     const ref = useRef(null);
@@ -46,20 +47,27 @@ const ProjectCard = (title, img, description, technologies, githublink, webLink,
                 </p>
             </div>
             <div class="flex flex-col p-6 pt-0 lg:flex-row">
-                <a
-                class="flex items-center select-none rounded-lg bg-violet-950 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                data-ripple-light="true"
-                href={githublink}
-                >
-                <FaGithub className='mr-2 text-xl'/> Github code
-                </a>
-                <a
-                class="flex items-center select-none mt-2 rounded-lg bg-green-600 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:ml-2 lg:mt-0"
-                data-ripple-light="true"
-                href={githublink}
-                >
-                <FaGithub className='mr-2 text-xl'/> Github code
-                </a>
+                {
+                    githublink &&
+                    <a
+                    class="flex items-center select-none rounded-lg bg-violet-950 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    data-ripple-light="true"
+                    href={githublink}
+                    >
+                    <FaGithub className='mr-2 text-xl'/> Github code
+                    </a>
+                }
+                {
+                    webLink &&
+                    <a
+                    class="flex items-center select-none mt-2 rounded-lg bg-green-600 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:ml-2 lg:mt-0"
+                    data-ripple-light="true"
+                    href={webLink}
+                    >
+                    <BiWorld className='mr-2 text-xl'/> Website
+                    </a>
+                }
+                
             </div>
         </div>
     )

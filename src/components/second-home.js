@@ -14,24 +14,30 @@ const Home = () => {
   return (
     <div className='h-screen w-screen max-h-screen bg-gray-100 flex flex-col justify-center lg:items-center'>
         <header className='absolute top-0 w-full flex items-center p-4 lg:justify-center pr-6'>
-            <div className='rounded-full bg-violet-950 h-20 w-20 flex items-center justify-center'>
-            <span className='text-white text-xl font-bold'>BA</span>
+            <div className='hidden md:flex rounded-full bg-violet-950 h-20 w-20 items-center justify-center'>
+              <span className='text-white text-xl font-bold'>BA</span>
             </div>
-            <div className='flex items-center absolute right-2 md:right-4 lg:right-24 gap-2'>
-                <img src="/linkedin-icon.svg" className='h-14'/>
-                <img src="/github-icon.svg" className='h-14'/>
-                <img src="/instagram-icon.svg" className='h-14'/>
+            <div className='flex items-center absolute top-4 right-4 lg:right-24 gap-2'>
+              <a href="https://www.linkedin.com/in/brunoafonso94/">
+                <img src="/linkedin-icon.svg" className='h-8 md:h-14'/>
+              </a>
+              <a href="https://github.com/Brunoa94">
+                <img src="/github-icon.svg" className='h-8 md:h-14'/>
+              </a>
+              <a href="https://www.instagram.com/brunoa94/">
+                <img src="/instagram-icon.svg" className='h-8 md:h-14'/>
+              </a>
             </div>  
         </header>
-        <div className='flex flex-col w-full items-center pb-10 md:pb-0 md:flex-col md:gap-6 md:justify-center lg:flex-row lg:w-5/6'>
-            <div className="h-full flex flex-col pb-6 w-11/12 lg:w-3/5 lg:pb-32 lg:justify-end">
+        <div className='flex flex-col px-4 w-full items-center pb-10 h-less-700:pb-0 md:px-0 md:pb-0 md:flex-col md:gap-6 md:justify-center lg:flex-row lg:w-5/6'>
+            <div className="h-full flex flex-col pb-6 w-full h-less-700:mt-4 lg:w-3/5 lg:pb-32 lg:justify-end">
             <div className='flex flex-col items-start relative'>
-                <span className='text-3xl text-gray-300 mb-4 font-reddit'>Bruno Afonso</span>
+                <span className='text-xl text-gray-300 md:text-3xl mb-4 h-less-700:mb-2 font-reddit'>Bruno Afonso</span>
                 <div className='flex items-center'>{
                 Array.from("Frontend").map((item, index) => (
                     <motion.span
                     key={index}
-                    className='text-7xl text-green-800 font-reddit'
+                    className='text-5xl md:text-7xl text-green-800 font-reddit'
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{
@@ -47,7 +53,7 @@ const Home = () => {
               Array.from("Developer.").map((item, index) => (
                 <motion.span
                   key={index} 
-                  className='text-7xl text-violet-950 font-reddit'
+                  className='text-5xl md:text-7xl text-violet-950 font-reddit'
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{
@@ -72,7 +78,8 @@ const Home = () => {
                 stiffness: 100,
                 restDelta: 0.001
                 }
-            }} className='pt-4 md:text-xl text-green-800 font-reddit'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante non velit eleifend fermentum.</motion.span>
+            }} className='text-base max-w-full pt-4 leading-6 md:text-xl text-green-800 font-reddit'>A software engineer who loves programming, learn and constantly improve his skills. Love to be the cupid between humans and applications.
+            </motion.span>
                 <motion.div  
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={startAnimation ? { opacity: 1, scale: 1 } : {}}
@@ -86,8 +93,8 @@ const Home = () => {
                     restDelta: 0.001
                 }
                 }} className='flex mt-6 lg:mt-6 relative'>
-                <h4 className='pr-2 mt-auto text-violet-950 md:text-lg font-reddit'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante non velit eleifend fermentum.</h4>
-                <h4 className='text-violet-950 pl-2 text-base md:text-lg font-reddit'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante non velit eleifend fermentum.</h4>
+                <h4 className='pr-2 mt-auto text-violet-950 leading-5 line-height md:text-lg font-reddit'>"We have two ears and one mouth so that we can listen twice as much as we speak." - Epictetus</h4>
+                <h4 className='text-violet-950 pl-2 text-base leading-5 md:text-lg font-reddit'>“My motto is to be stronger than yesterday, if I have to I’ll be stronger than half a day ago, even a minute ago!” - Rock Lee</h4>
                 </motion.div>
                 <div className='flex items-end mt-4 gap-4'>
                   <motion.div
@@ -104,7 +111,7 @@ const Home = () => {
                     scale: 1.1,
                     transition: { duration: 0.5 },
                   }} 
-                  href="" 
+                  href="mailto:bruno.afonso94@hotmail.com" 
                   className='text-2xl uppercase text-violet-950 underline pb-1'>Contact Me</motion.a>
                 </div>
             </div>

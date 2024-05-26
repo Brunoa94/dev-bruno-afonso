@@ -14,6 +14,9 @@ module.exports = {
       },
       backgroundImage: {
         circularEllipse: 'repeating-radial-gradient(#2e1065, 5px, #f5f5f5 8px, #f5f5f5 120px);'
+      },
+      screens: {
+        'h-less-700': { 'raw': '(max-height: 699px)' },
       }
     },
   },

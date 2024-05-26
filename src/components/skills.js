@@ -22,7 +22,7 @@ const Skills = () => {
         )
     }
   return (
-    <div className='w-full flex items-center justify-center flex-col'>
+    <div className='hidden md:flex w-full items-center justify-center flex-col'>
         <div className='w-full h-[500px] bg-gray-100 p-8 flex items-center justify-center flex-col re'>
         <span className='text-3xl text-violet-950 font-bold font-reddit'>Skills</span>
         <div className='w-[900px] h-[500px] relative flex items-center justify-center rounded-full bg-circularEllipse'>
