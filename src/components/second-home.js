@@ -104,7 +104,7 @@ const Home = () => {
                   }}
                   whileTap={{ scale: 0.9 }} 
                   className='bg-violet-950 flex items-center justify-center px-10 py-2 w-fit cursor-pointer rounded-xl'>
-                    <span className='text-white font-reddit text-base uppercase'>Resume</span>
+                    <a href="./curriculum_vitae.pdf" download="Curriculum - Bruno Afonso" className='text-white font-reddit text-base uppercase'>Resume</a>
                   </motion.div>
                   <motion.a
                   whileHover={{
