@@ -60,7 +60,7 @@ function App() {
 
   return (
     <div className="AppBody max-w-screen overflow-hidden relative flex">
-      <div className='w-full h-screen absolute top-0 left-0 z-10'>
+      <div className='w-full absolute top-0 left-0 z-10'>
         <canvas id="c" className=''>
         </canvas>
       </div>
