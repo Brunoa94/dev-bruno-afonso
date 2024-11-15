@@ -5,8 +5,8 @@ import { CiSquareMore } from "react-icons/ci";
 
 export default function Projects() {
   return (
-    <div className='flex flex-col items-center px-4 py-6 lg:py-28 bg-gray-100'>
-      <span className='text-3xl text-violet-950 font-bold mb-8 font-reddit'>Projects</span>
+    <div className='flex flex-col items-center px-4 py-6 lg:py-28'>
+      <span className='text-3xl text-gray-100 font-bold mb-8 font-reddit'>Projects</span>
       <div className='lg:w-4/6 gap-4'>
       {ProjectCard("Aptoide",
           "/projects/aptoide-2.png",

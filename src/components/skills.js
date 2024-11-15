@@ -1,9 +1,13 @@
 import React, { useRef } from 'react';
 import {motion, useInView} from 'framer-motion';
+import { FaCss3Alt, FaReact, FaGithub, FaNodeJs } from "react-icons/fa";
+import { SiTailwindcss, SiHtml5, SiRubyonrails } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+import { BiLogoTypescript } from "react-icons/bi";
 
 const Skills = () => {
 
-    const Skill = (name, x, y, color) => {
+    const Skill = (name, x, y, color, icon) => {
         const ref = useRef(null);
         const isInView = useInView(ref, { once: true });
 
@@ -16,33 +20,32 @@ const Skills = () => {
                 x: x, y: y
             }: {}}
             transition={{duration: 2.5}}
-            className={`flex items-center justify-center rounded-full font-semibold text-white p-5 shadow-dark cursor-pointer absolute ${color}`}>
-                {name}
+            className={`flex items-center justify-center rounded-full font-semibold text-white p-5 shadow-dark cursor-pointer absolute bg-spheres h-20 w-20 shadow-2xl`}>
+                
+                {icon}
             </motion.div>
         )
     }
   return (
     <div className='hidden md:flex w-full items-center justify-center flex-col'>
-        <div className='w-full h-[500px] bg-gray-100 p-8 flex items-center justify-center flex-col re'>
-        <span className='text-3xl text-violet-950 font-bold font-reddit'>Skills</span>
+        <div className='w-full h-[500px] p-8 flex items-center justify-center flex-col re'>
+        <span className='text-3xl text-gray-100 font-bold font-reddit'>Technologies</span>
         <div className='w-[900px] h-[500px] relative flex items-center justify-center rounded-full bg-circularEllipse'>
-            <motion.div whileHover={{scale: 1.1}} className='flex items-center justify-center bg-violet-950 rounded-full font-semibold text-white p-5 shadow-dark cursor-pointer'>
+            <motion.div whileHover={{scale: 1.1}} className='flex items-center justify-center h-20 w-20 bg-yellow-500 rounded-full font-semibold text-white p-5 shadow-dark cursor-pointer'>
                 Web
             </motion.div>
-            {Skill("CSS", -50, 100, "bg-yellow-700")}
-            {Skill("Tailwind CSS", 50, -100, "bg-yellow-700")}
-            {Skill("HTML", -150, -150, "bg-yellow-700")}
-            {Skill("NextJS", 240, -140, "bg-yellow-700")}
-            {Skill("React", -250, 120, "bg-yellow-700")}
-            {Skill("Typescript", -350, 0, "bg-orange-700")}
-            {Skill("Github", 350, 0, "bg-orange-700")}
-            {Skill("Ruby on Rails", 260, 180, "bg-red-800")}
-            {Skill("NodeJS", -300, -170, "bg-red-800")}
-            {Skill("SEO", -200, 200, "bg-violet-700")}
+            {Skill("CSS", -50, 100, "bg-yellow-700", <FaCss3Alt className='text-4xl'/>)}
+            {Skill("Tailwind CSS", 50, -100, "bg-yellow-700", <SiTailwindcss className='text-4xl'/>)}
+            {Skill("HTML", -150, -150, "bg-yellow-700", <SiHtml5 className='text-4xl'/>)}
+            {Skill("NextJS", 240, -140, "bg-yellow-700", <TbBrandNextjs className='text-4xl'/>)}
+            {Skill("React", -250, 120, "bg-yellow-700", <FaReact className='text-4xl'/>)}
+            {Skill("Typescript", -350, 0, "bg-orange-700", <BiLogoTypescript className='text-4xl'/>)}
+            {Skill("Github", 350, 0, "bg-orange-700", <FaGithub className='text-4xl'/>)}
+            {Skill("Ruby on Rails", 260, 180, "bg-red-800", <SiRubyonrails className='text-4xl'/>)}
+            {Skill("NodeJS", -300, -170, "bg-red-800", <FaNodeJs className='text-4xl'/> )}
         </div>
     </div>
-    
-        <div className='flex items-center pt-6 w-full justify-center gap-3 bg-gray-100'>
+        <div className='flex items-center pt-6 w-full justify-center gap-3 lg:hidden'>
             <div className='flex items-center'>
                 <div className='h-4 w-4 bg-yellow-700'/>
                 <span className='ml-2 text-gray-400 font-reddit'>Advanced</span>

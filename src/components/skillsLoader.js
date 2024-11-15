@@ -31,8 +31,8 @@ const SkillsLoader = () => {
     }
 
   return (
-    <div className='md:hidden flex flex-col items-center w-full px-4 py-8 bg-gray-100'>
-        <span className='mb-4 text-3xl text-violet-950 font-bold font-reddit'>Skills</span>
+    <div className='md:hidden flex flex-col items-center w-full px-4 py-8'>
+        <span className='mb-4 text-3xl text-gray-100 font-bold font-reddit'>Technologies</span>
         <div className='flex w-full flex-col gap-4'>
             {Skill("CSS / Tailwind CSS", 80)}
             {Skill("HTML", 80)}

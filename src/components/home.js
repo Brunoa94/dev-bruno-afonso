@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <div className='h-screen'>
       <header className='relative w-full flex items-center p-4 justify-center pr-6'>
-        <div className='rounded-full bg-violet-950 w-20 h-20 flex items-center justify-center'>
+        <div className='rounded-full bg-violet-500 w-20 h-20 flex items-center justify-center'>
           <span className='text-white text-2xl font-bold'>BA</span>
         </div>
         <div className='flex items-center absolute right-24 gap-2'>

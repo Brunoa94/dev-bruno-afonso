@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {motion} from "framer-motion";
+import { FaGithub } from "react-icons/fa";
 
 const Home = () => {
     const [startAnimation, setStartAnimation] = useState(false);
@@ -11,10 +12,11 @@ const Home = () => {
 
     return () => clearTimeout(timer); // Clean up the timer on component unmount
   }, []);
+  
   return (
-    <div className='h-screen w-screen max-h-screen bg-gray-100 flex flex-col justify-center lg:items-center'>
+    <div className='h-screen w-screen max-h-screen flex flex-col justify-center lg:items-center'>
         <header className='absolute top-0 w-full flex items-center p-4 lg:justify-center pr-6'>
-            <div className='hidden md:flex rounded-full bg-violet-950 h-20 w-20 items-center justify-center'>
+            <div className='hidden md:flex rounded-full bg-violet-600 h-20 w-20 items-center justify-center'>
               <span className='text-white text-xl font-bold'>BA</span>
             </div>
             <div className='flex items-center absolute top-4 right-4 lg:right-24 gap-2'>
@@ -22,7 +24,7 @@ const Home = () => {
                 <img src="/linkedin-icon.svg" className='h-8 md:h-14'/>
               </a>
               <a href="https://github.com/Brunoa94">
-                <img src="/github-icon.svg" className='h-8 md:h-14'/>
+                <FaGithub className='text-3xl lg:text-5xl'/>
               </a>
               <a href="https://www.instagram.com/brunoa94/">
                 <img src="/instagram-icon.svg" className='h-8 md:h-14'/>
@@ -32,12 +34,12 @@ const Home = () => {
         <div className='flex flex-col px-4 w-full items-center pb-10 h-less-700:pb-0 md:px-0 md:pb-0 md:flex-col md:gap-6 md:justify-center lg:flex-row lg:w-5/6'>
             <div className="h-full flex flex-col px-4 pb-6 w-full h-less-700:mt-4 lg:w-3/5 lg:pb-32 lg:justify-end">
             <div className='flex flex-col items-start relative'>
-                <span className='text-xl text-gray-300 md:text-3xl mb-4 h-less-700:mb-2 font-reddit'>Bruno Afonso</span>
+                <span className='text-xl text-gray-100 md:text-3xl mb-4 h-less-700:mb-2 font-reddit'>Bruno Afonso</span>
                 <div className='flex items-center'>{
                 Array.from("Frontend").map((item, index) => (
                     <motion.span
                     key={index}
-                    className='text-5xl md:text-7xl text-green-800 font-reddit'
+                    className='text-5xl md:text-7xl text-violet-500 font-reddit'
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{
@@ -53,7 +55,7 @@ const Home = () => {
               Array.from("Developer.").map((item, index) => (
                 <motion.span
                   key={index} 
-                  className='text-5xl md:text-7xl text-violet-950 font-reddit'
+                  className='text-5xl md:text-7xl text-gray-200 font-reddit'
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{
@@ -78,7 +80,7 @@ const Home = () => {
                 stiffness: 100,
                 restDelta: 0.001
                 }
-            }} className='text-base max-w-full pt-4 leading-6 md:text-xl text-green-800 font-reddit'>A software engineer who loves programming, learn and constantly improve his skills.
+            }} className='text-base max-w-full pt-4 leading-6 md:text-xl text-white font-reddit'>A software engineer who loves programming, learn and constantly improve his skills.
             </motion.span>
                 <motion.div  
                 initial={{ opacity: 0, scale: 0.5 }}
@@ -93,8 +95,8 @@ const Home = () => {
                     restDelta: 0.001
                 }
                 }} className='flex mt-6 lg:mt-6 relative'>
-                <h4 className='pr-2 text-violet-950 leading-5 line-height md:text-lg font-reddit'>"We have two ears and one mouth so that we can listen twice as much as we speak." - Epictetus</h4>
-                <h4 className='text-violet-950 pl-2 text-base leading-5 md:text-lg font-reddit'>“My motto is to be stronger than yesterday, if I have to I’ll be stronger than half a day ago, even a minute ago!” - Rock Lee</h4>
+                <h4 className='pr-2 text-gray-100 leading-5 line-height md:text-lg font-reddit'>"We have two ears and one mouth so that we can listen twice as much as we speak." - Epictetus</h4>
+                <h4 className='text-gray-100 pl-2 text-base leading-5 md:text-lg font-reddit'>“My motto is to be stronger than yesterday, if I have to I’ll be stronger than half a day ago, even a minute ago!” - Rock Lee</h4>
                 </motion.div>
                 <div className='flex items-end mt-4 gap-4'>
                   <motion.div
@@ -103,7 +105,7 @@ const Home = () => {
                     transition: { duration: 0.5 },
                   }}
                   whileTap={{ scale: 0.9 }} 
-                  className='bg-violet-950 flex items-center justify-center px-10 py-2 w-fit cursor-pointer rounded-xl'>
+                  className='bg-violet-600 flex items-center justify-center px-10 py-2 w-fit cursor-pointer rounded-xl'>
                     <a href="./curriculum_vitae.pdf" download="Curriculum - Bruno Afonso" className='text-white font-reddit text-base uppercase'>Resume</a>
                   </motion.div>
                   <motion.a
@@ -112,7 +114,7 @@ const Home = () => {
                     transition: { duration: 0.5 },
                   }} 
                   href="mailto:bruno.afonso94@hotmail.com" 
-                  className='text-2xl uppercase text-violet-950 underline pb-1'>Contact Me</motion.a>
+                  className='text-2xl uppercase text-gray-200 underline pb-1'>Contact Me</motion.a>
                 </div>
             </div>
             <motion.img
@@ -121,10 +123,10 @@ const Home = () => {
             transition={{
                 duration: 1,
             }} 
-            className='w-[400px] rounded-full hidden lg:flex' src="/photo-1.png"/>
+            className='w-[400px] hidden rounded-[25%] lg:flex' src="/photo-111.png"/>
         </div>
         <motion.div
-         className='h-8 bg-violet-950 w-full border-t-4 border-green-800 shrink-0 md:mt-7'
+         className='h-6 bg-gray-300 w-full border-t-4 border-violet-600 shrink-0 md:mt-7'
          initial={{ width: 0 }}
          animate={{ width: "100%" }}
          transition={{
