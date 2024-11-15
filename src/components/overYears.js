@@ -23,15 +23,15 @@ function OverYears() {
   const [isAnimating, setIsAnimating] = useState(false); // Control the animation
 
   // The long text you want to animate
-  const text = `My professional career as a Software Engineer started 5 years ago during the last year of my master's degree. However, I like to think that my most valuable skills began developing 16 years ago when I started my career in sports. Over the past 16 years, I have participated in dozens of European and World championships, competed for the Olympic Games, and significantly improved my focus, determination, consistency, and discipline. Being productive for one day is easy; being productive consistently over years it's not.
+  const text = `Since childhood I have always been passionate about numbers and solving math problems. Without being aware of what programming was in 2012 I started studying Computer Engineering and finished my Master’s Degree in 2019 getting immediately my first job as a Trainee Backend Engineer.
 
-I began my career as a backend developer, mainly working with Ruby on Rails. Although I realized after some time that backend development was not my preferred area, I am grateful for that period because I worked with people who instilled good practices in me that I will carry forever. Code quality was and is always a top priority!
+This first job taught me patterns and practices that I still apply daily basis. Code quality is always the top priority, staying updated with the last technologies on a market that is constantly growing is important, and be passionate about what we do is a huge plus.
 
-In 2020, I took a break from my professional career to dedicate myself 100% to my sports career, something I had never done before. I had always studied and trained simultaneously, and later, worked and trained. However, that year was my last chance to qualify for the Tokyo Olympic Games, which I narrowly missed by 0.7 seconds.
+A few years later, I began learning Frontend development on my own through online courses, and just 6 months after I got a job in one of the biggest alternative app stores company, Aptoide. What a challenge it was in the beginning. Thinking that my daily work was impacting millions of people was challenging, and definitely pushed my limits. Focusing on performance details significantly improved my skills as a Frontend developer, and now I feel that I can say that I’m ready for anything. 
 
-In 2021, I decided to shift my professional career and began learning Frontend programming with React on my own. By August, I secured my first job as a Frontend developer at Aptoide, which has been the biggest challenge of my career so far.
+My journey as a software developer always had a parallel journey as an high performance athlete. Between 2010 and 2024 I integrated the National Canoe Sprint team, participating in dozens of European and World championships, and in the Olympic Qualifier for Tokyo 2020.
 
-Aptoide has millions of page views per day, and as a novice frontend developer, it was daunting to think that my work would be visible to such a large audience. However, this challenge constantly pushed me to improve, and I am incredibly thankful for this experience. It's been an amazing ride.`;
+Keep two hard journeys in parallel was a challenge, but looking back I don’t regret about anything. My discipline, commitment and hard work are soft skills intrinsic on myself, and I can’t be more thankful to the decisions that young Bruno took. What a journey it’s being!`;
 
   // Split the text into an array of paragraphs
   const paragraphs = text.split("\n");
@@ -77,11 +77,11 @@ Aptoide has millions of page views per day, and as a novice frontend developer, 
           className="my-4 text-gray-200 font-reddit text-justify" // Apply your Tailwind classes
           style={{
             fontFamily: "monospace", // Fallback font-family for the typing effect
-            fontSize: "20px",
+            fontSize: "16px",
             whiteSpace: "pre-wrap", // Preserve line breaks
             position: "relative",
             overflow: "hidden",
-            lineHeight: "1.5",
+            lineHeight: "1.2",
           }}
         >
       {paragraphs.map((paragraph, pIndex) => (
