@@ -23,15 +23,15 @@ function OverYears() {
   const [isAnimating, setIsAnimating] = useState(false); // Control the animation
 
   // The long text you want to animate
-  const text = `Since childhood I have always been passionate about numbers and solving math problems. Without being aware of what programming was in 2012 I started studying Computer Engineering and finished my Master’s Degree in 2019 getting immediately my first job as a Trainee Backend Engineer.
+  const text = `Since childhood, I have always been passionate about numbers and solving math problems. Without being aware of what programming was, in 2012 I started studying Computer Engineering and finished my Master’s Degree in 2019, immediately getting my first job as a Trainee Backend Engineer.
 
-This first job taught me patterns and practices that I still apply daily basis. Code quality is always the top priority, staying updated with the last technologies on a market that is constantly growing is important, and be passionate about what we do is a huge plus.
+This first job taught me patterns and practices that I still apply on a daily basis. Code quality is always the top priority; staying updated with the latest technologies in a market that is constantly growing is important, and being passionate about what we do is a huge plus.
 
-A few years later, I began learning Frontend development on my own through online courses, and just 6 months after I got a job in one of the biggest alternative app stores company, Aptoide. What a challenge it was in the beginning. Thinking that my daily work was impacting millions of people was challenging, and definitely pushed my limits. Focusing on performance details significantly improved my skills as a Frontend developer, and now I feel that I can say that I’m ready for anything. 
+A few years later, I began learning Frontend development on my own through online courses, and just 6 months after, I got a job at one of the biggest alternative app stores companies, Aptoide. What a challenge it was in the beginning. Knowing that my daily work was impacting millions of people was challenging and definitely pushed my limits. Focusing on performance details significantly improved my skills as a Frontend developer, and now I feel that I can say I’m ready for anything.
 
-My journey as a software developer always had a parallel journey as an high performance athlete. Between 2010 and 2024 I integrated the National Canoe Sprint team, participating in dozens of European and World championships, and in the Olympic Qualifier for Tokyo 2020.
+My journey as a software developer always had a parallel journey as a high-performance athlete. Between 2010 and 2024, I was part of the National Canoe Sprint team, participating in dozens of European and World Championships, and in the Olympic Qualifier for Tokyo 2020.
 
-Keep two hard journeys in parallel was a challenge, but looking back I don’t regret about anything. My discipline, commitment and hard work are soft skills intrinsic on myself, and I can’t be more thankful to the decisions that young Bruno took. What a journey it’s being!`;
+Keeping two hard journeys in parallel was a challenge, but looking back, I don’t regret anything. My discipline, commitment, and hard work are intrinsic soft skills, and I can’t be more thankful for the decisions that young Bruno made. What a journey it’s been!`;
 
   // Split the text into an array of paragraphs
   const paragraphs = text.split("\n");

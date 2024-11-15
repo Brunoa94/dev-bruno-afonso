@@ -80,7 +80,7 @@ const Home = () => {
                 stiffness: 100,
                 restDelta: 0.001
                 }
-            }} className='text-base max-w-full pt-4 leading-6 md:text-xl text-white font-reddit'>A software engineer who loves programming, learn and constantly improve his skills.
+            }} className='text-base max-w-full pt-4 leading-6 md:text-xl text-white font-reddit'>Someone who loves programming, enjoys sharing ideas, and constantly works to improve his skills.
             </motion.span>
                 <motion.div  
                 initial={{ opacity: 0, scale: 0.5 }}
