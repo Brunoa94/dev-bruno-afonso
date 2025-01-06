@@ -22,35 +22,39 @@ const ProjectCard = (title, img, description, technologies, githublink, webLink,
     }
 
     return (
-        <div style={animation} ref={ref} class="w-full relative flex flex-col rounded-xl max-h-[600px] bg-white bg-clip-border text-gray-700 shadow-solid-right-bottom">
-            <div class={`hidden w-full relative overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 lg:flex max-h-[${big ? "320px" : "270px"}]`}>
+        <div style={animation} ref={ref} class="flex-col md:flex-row w-full h-fit py-4 rounded-lg bg-transparent px-4 flex items-center relative z-20 shadow-[-1px_51px_69px_-54px_rgba(22,163,74,0.5)]">
+            <div class={`flex flex-col align-items justify-center`}>
                 <img
                 src={img}
                 alt="img-blur-shadow"
-                layout="fill"
+                className='rounded-lg shrink-0 h-full min-w-[250px] w-[250px]'
                 />
             </div>
-            <div class="p-6">
-                <h5 class="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased font-roboto">
-                {title}
-                </h5>
-                {
-                    description &&
-                    <p class="block text-base leading-relaxed text-inherit antialiased font-reddit">
-                        {description}
-                    </p>
-                }
+            <div className='flex flex-col gap-2 px-4'>
+                <div class="">
+                    <h5 class="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased font-roboto">
+                    {title}
+                    </h5>
+                    {
+                        description &&
+                        <p class="block text-base leading-relaxed text-inherit antialiased font-reddit line-clamp-3">
+                            {description}
+                        </p>
+                    }
+                </div>
+                <div className='flex items-center'>
+                    <div className='pt-0'>
+                        <p class="block text-base font-light leading-relaxed text-inherit antialiased font-reddit">
+                        <strong className='font-roboto font-bold'>Technologies:</strong> {technologies}
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div className='p-6 pt-0'>
-                <p class="block text-base font-light leading-relaxed text-inherit antialiased font-reddit">
-                <strong className='font-roboto'>Technologies:</strong> {technologies}
-                </p>
-            </div>
-            <div class="flex flex-col p-6 pt-0 lg:flex-row">
+            <div class="flex gap-2 md:flex-col pt-0 mt-4 md:mt-0 md:ml-auto">
                 {
                     githublink &&
                     <a
-                    class="flex items-center select-none rounded-lg bg-violet-950 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    class="h-[44px] flex items-center justify-center select-none rounded-lg bg-violet-950 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none whitespace-nowrap"
                     data-ripple-light="true"
                     href={githublink}
                     >
@@ -60,7 +64,7 @@ const ProjectCard = (title, img, description, technologies, githublink, webLink,
                 {
                     webLink &&
                     <a
-                    class="flex items-center select-none mt-2 rounded-lg bg-green-600 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:ml-2 lg:mt-0"
+                    class="w-[162px] flex items-center justify-center select-none rounded-lg bg-green-600 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:mt-0"
                     data-ripple-light="true"
                     href={webLink}
                     >
