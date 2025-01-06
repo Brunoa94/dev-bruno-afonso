@@ -33,32 +33,30 @@ My journey as a software developer always had a parallel journey as a high-perfo
 
 Keeping two hard journeys in parallel was a challenge, but looking back, I don’t regret anything. My discipline, commitment, and hard work are intrinsic soft skills, and I can’t be more thankful for the decisions that young Bruno made. What a journey it’s been!`;
 
-  // Split the text into an array of paragraphs
   const paragraphs = text.split("\n");
 
-  // Create an Intersection Observer
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         const [entry] = entries;
         if (entry.isIntersecting) {
-          setIsVisible(true); // Set isVisible to true when the element comes into view
-          setIsAnimating(true); // Start the animation when the component enters the viewport
+          setIsVisible(true);
+          setIsAnimating(true);
         }
       },
       {
-        threshold: 0.1, // Trigger when 10% of the component is visible
+        threshold: 0.1,
       }
     );
 
     const element = document.getElementById("writing-machine");
     if (element) {
-      observer.observe(element); // Start observing the element
+      observer.observe(element);
     }
 
     return () => {
       if (element) {
-        observer.unobserve(element); // Cleanup observer when component unmounts
+        observer.unobserve(element);
       }
     };
   }, []);
