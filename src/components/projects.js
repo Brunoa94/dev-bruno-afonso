@@ -16,7 +16,7 @@ export default function Projects() {
           "https://en.aptoide.com", true, "left")}
           {ProjectCard("Trelol",
           "/projects/trello.png",
-          "A Trello clone built with Vite, HTML, and Tailwind CSS for the frontend, providing a responsive and modern UI. The backend uses Node.js with GraphQL for efficient API communication and MongoDB for persistent storage of boards, lists, and tasks. This app delivers seamless task management and real-time updates with a scalable fullstack architecture.",
+          "A Trello clone built with Vite, HTML, and Tailwind CSS for the frontend, providing a responsive and modern UI. The backend uses Node.js with GraphQL for efficient API communication and MongoDB for persistent storage of boards, lists, and tasks. To get a resume of the descriptions of an entire column there is an integration with GPT 4.0.",
           "Vite; HTML; Tailwind CSS; Node.js; GraphQL; MongoDB",
           "https://github.com/Brunoa94/trello_dashboard_front",
           "https://trello-dashboard-front-gb1k.vercel.app/", false, "right")}
