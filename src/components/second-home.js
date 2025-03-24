@@ -68,36 +68,7 @@ const Home = () => {
               ))
             }</div>
           </div>
-            <motion.span 
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={startAnimation ? { opacity: 1, scale: 1 } : {}}
-            transition={{
-                duration: 0.3,
-                ease: [0, 0.71, 0.2, 1.01],
-                scale: {
-                type: "spring",
-                damping: 5,
-                stiffness: 100,
-                restDelta: 0.001
-                }
-            }} className='text-base max-w-full pt-4 leading-6 md:text-xl text-white font-reddit'>Someone who loves programming, enjoys sharing ideas, and constantly works to improve his skills.
-            </motion.span>
-                <motion.div  
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={startAnimation ? { opacity: 1, scale: 1 } : {}}
-                transition={{
-                duration: 0.3,
-                ease: [0, 0.71, 0.2, 1.01],
-                scale: {
-                    type: "spring",
-                    damping: 5,
-                    stiffness: 100,
-                    restDelta: 0.001
-                }
-                }} className='flex mt-6 lg:mt-6 relative'>
-                <h4 className='pr-2 text-gray-100 leading-5 line-height md:text-lg font-reddit'>"We have two ears and one mouth so that we can listen twice as much as we speak." - Epictetus</h4>
-                <h4 className='text-gray-100 pl-2 text-base leading-5 md:text-lg font-reddit'>“My motto is to be stronger than yesterday, if I have to I’ll be stronger than half a day ago, even a minute ago!” - Rock Lee</h4>
-                </motion.div>
+            
                 <div className='flex items-end mt-4 gap-4'>
                   <motion.div
                   whileHover={{

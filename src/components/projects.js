@@ -38,6 +38,12 @@ export default function Projects() {
           "HTML; Styled Components; NextJS",
           "https://github.com/Brunoa94/gym-pro",
           "https://gym-pro-puce.vercel.app/", false, "right")}
+          {ProjectCard("E-tool Market",
+          "/projects/e-tool.png",
+          "In progress",
+          "HTML; Tailwind CSS; NextJS; Material Tailwind; GraphQL; MongoDB",
+          undefined,
+          undefined, false, "right")}
       </div>
       {/* <div className='mt-8 w-full border-rad flex items-center justify-center bg-violet-950 p-4 rounded-xl cursor-pointer lg:w-fit lg:ml-auto'>
         <CiSquareMore className='text-3xl text-white'/>
