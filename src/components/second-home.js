@@ -34,7 +34,7 @@ const Home = () => {
         <div className='flex flex-col px-4 w-full items-center pb-10 h-less-700:pb-0 md:px-0 md:pb-0 md:flex-col md:gap-6 md:justify-center lg:flex-row lg:w-5/6'>
             <div className="h-full flex flex-col px-4 pb-6 w-full h-less-700:mt-4 lg:w-3/5 lg:pb-32 lg:justify-end">
             <div className='flex flex-col items-start relative'>
-                <span className='text-xl text-gray-100 md:text-3xl mb-4 h-less-700:mb-2 font-reddit'>Bruno Afonso</span>
+                <span className='text-xl text-gray-100 md:text-3xl mb-4 h-less-700:mb-2 font-reddit'>Bruno Afonso Dev</span>
                 <div className='flex items-center'>{
                 Array.from("Frontend").map((item, index) => (
                     <motion.span
